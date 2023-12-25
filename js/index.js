@@ -55,8 +55,8 @@ function sortAlgs(){
     this.classList.add("butt_selected");
     switch(this.innerHTML)
     {
-        // case "Bubble":Bubble();
-        //                 break;
+        case "Bubble":bubble();
+                        break;
         case "Selection":selection();
                         break;
         // case "Insertion":Insertion();
@@ -66,6 +66,8 @@ function sortAlgs(){
         // case "Quick":Quick();
         //                 break;
         // case "Heap":Heap();
+        //                 break;
+        // case "Bogo":Bogo();
         //                 break;
     }
 }
