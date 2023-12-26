@@ -59,8 +59,8 @@ function sortAlgs(){
                         break;
         case "Selection":selection();
                         break;
-        // case "Insertion":Insertion();
-        //                 break;
+        case "Insertion":insertion();
+                        break;
         // case "Merge":Merge();
         //                 break;
         // case "Quick":Quick();
@@ -71,7 +71,7 @@ function sortAlgs(){
         //                 break;
     }
 }
-speed = 900;//set the speed of the algorithm
+speed = 1500;//set the speed of the algorithm
 var delay_time=10000/(Math.floor(sizeArr/10)*speed);//Decrease numerator to increase speed.
 var c_delay=0;//This is updated ov every div change so that visualization is visible.
 

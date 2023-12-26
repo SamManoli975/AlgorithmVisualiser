@@ -1,3 +1,8 @@
+/*
+author : Sam Manoli
+DESCRIPTION: javascript file to complete bubble sort with the random algorithm and visualise it
+*/
+
 function bubble(){
 
     for(var i=0;i<sizeArr-1;i++)
