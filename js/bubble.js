@@ -20,10 +20,10 @@ function bubble(){
                 rndArr[j]=rndArr[j+1];
                 rndArr[j+1]=temp;
 
-                updateDisplay(divs[j], "red",rndArr[j]);//Height update
-                updateDisplay(divs[j+1], "red",rndArr[j+1]);//Height update
+                updateDisplay(divs[j], "red",rndArr[j]);
+                updateDisplay(divs[j+1], "red",rndArr[j+1]);
             }
-            updateDisplay(divs[j], "purple",rndArr[j]);//Color updat
+            updateDisplay(divs[j], "purple",rndArr[j]);
         }
         updateDisplay(divs[j], "green",rndArr[j]);
     }

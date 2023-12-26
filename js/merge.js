@@ -16,29 +16,29 @@ function mergeSort(l,m,r){
         if(p>m)
         {
             Arr[k++]=rndArr[q++];
-            updateDisplay(divs[q-1],"red",rndArr[q-1]);//Color update
+            updateDisplay(divs[q-1],"red",rndArr[q-1]);
         }
         else if(q>r)
         {
             Arr[k++]=rndArr[p++];
-            updateDisplay(divs[p-1],"red",rndArr[p-1]);//Color update
+            updateDisplay(divs[p-1],"red",rndArr[p-1]);
         }
         else if(rndArr[p]<rndArr[q])
         {
             Arr[k++]=rndArr[p++];
-            updateDisplay(divs[p-1],"red",rndArr[p-1]);//Color update
+            updateDisplay(divs[p-1],"red",rndArr[p-1]);
         }
         else
         {
             Arr[k++]=rndArr[q++];
-            updateDisplay(divs[q-1],"red",rndArr[q-1]);//Color update
+            updateDisplay(divs[q-1],"red",rndArr[q-1]);
         }
     }
 
     for(var t=0;t<k;t++)
     {
         rndArr[l++]=Arr[t];
-        updateDisplay(divs[l-1],"green",rndArr[l-1]);//Color update
+        updateDisplay(divs[l-1],"green",rndArr[l-1]);
     }
 }
 
@@ -47,7 +47,7 @@ function mergePrep(l,r){
         return;
     }
     var m =Math.floor((l + r) / 2);
-    updateDisplay(divs[m],"yellow",rndArr[m]);//Color update
+    updateDisplay(divs[m],"yellow",rndArr[m]);
 
     mergePrep(l,m);
     mergePrep(m+1,r);
