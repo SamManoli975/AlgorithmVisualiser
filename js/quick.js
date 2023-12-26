@@ -13,48 +13,48 @@ function quick(){
 function partition(start, end) {
     
     var i = start + 1;
-    var piv = rndArr[start] ;//make the first element as pivot element.
-    updateDisplay(divs[start],"yellow",rndArr[start]);//Color update
+    var piv = rndArr[start] ;
+    updateDisplay(divs[start],"yellow",rndArr[start]);
 
         for(var j =start + 1; j <= end ; j++ )
         {
-            //re-arrange the array by putting elements which are less than pivot on one side and which are greater that on other.
+            
             if (rndArr[ j ] < piv)
             {
-                updateDisplay(divs[j],"yellow",rndArr[j]);//Color update
+                updateDisplay(divs[j],"yellow",rndArr[j]);
 
-                updateDisplay(divs[i],"red",rndArr[i]);//Color update
-                updateDisplay(divs[j],"red",rndArr[j]);//Color update
+                updateDisplay(divs[i],"red",rndArr[i]);
+                updateDisplay(divs[j],"red",rndArr[j]);
 
                 var temp=rndArr[i];
                 rndArr[i]=rndArr[j];
                 rndArr[j]=temp;
 
-                updateDisplay(divs[i],"red",rndArr[i]);//Height update
-                updateDisplay(divs[j],"red",rndArr[j]);//Height update
+                updateDisplay(divs[i],"red",rndArr[i]);
+                updateDisplay(divs[j],"red",rndArr[j]);
 
-                updateDisplay(divs[i],"purple",rndArr[i]);//Height update
-                updateDisplay(divs[j],"purple",rndArr[j]);//Height update
+                updateDisplay(divs[i],"purple",rndArr[i]);
+                updateDisplay(divs[j],"purple",rndArr[j]);
 
                 i += 1;
             }
     }
-    updateDisplay(divs[start],"red",rndArr[start]);//Color update
-    updateDisplay(divs[i-1],"red",rndArr[i-1]);//Color update
+    updateDisplay(divs[start],"red",rndArr[start]);
+    updateDisplay(divs[i-1],"red",rndArr[i-1]);
     
-    var temp=rndArr[start];//put the pivot element in its proper place.
+    var temp=rndArr[start];
     rndArr[start]=rndArr[i-1];
     rndArr[i-1]=temp;
 
-    updateDisplay(divs[start],"red",rndArr[start]);//Height update
-    updateDisplay(divs[i-1],"red",rndArr[i-1]);//Height update
+    updateDisplay(divs[start],"red",rndArr[start]);
+    updateDisplay(divs[i-1],"red",rndArr[i-1]);
 
     for(var t=start;t<=i;t++)
     {
-        updateDisplay(divs[t],"green",rndArr[t]);//Color update
+        updateDisplay(divs[t],"green",rndArr[t]);
     }
 
-    return i-1;//return the position of the pivot
+    return i-1;
 
     
 }

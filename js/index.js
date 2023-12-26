@@ -65,10 +65,10 @@ function sortAlgs(){
                         break;
         case "Quick":quick();
                         break;
-        // case "Bogo":Bogo();
-        //                 break;
-        // case "Shell":shell();
-        //                 break;
+        case "Bogo":bogo();
+                        break;
+        case "Shell":shell();
+                        break;
         // case "Comb":comb();
         //                 break;
         // case "Cycle":cycle();
