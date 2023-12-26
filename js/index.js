@@ -61,17 +61,23 @@ function sortAlgs(){
                         break;
         case "Insertion":insertion();
                         break;
-        // case "Merge":Merge();
-        //                 break;
+        case "Merge":merge();
+                        break;
         // case "Quick":Quick();
-        //                 break;
-        // case "Heap":Heap();
         //                 break;
         // case "Bogo":Bogo();
         //                 break;
+        // case "Shell":shell();
+        //                 break;
+        // case "Comb":comb();
+        //                 break;
+        // case "Cycle":cycle();
+        //                 break;
+        // case "Cocktail":cocktail();
+        //                 break;
     }
 }
-speed = 1500;//set the speed of the algorithm
+speed = 100;//set the speed of the algorithm
 var delay_time=10000/(Math.floor(sizeArr/10)*speed);//Decrease numerator to increase speed.
 var c_delay=0;//This is updated ov every div change so that visualization is visible.
 
