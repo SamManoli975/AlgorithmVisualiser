@@ -4,9 +4,9 @@ description: cycle sort algorithm
 
 */
 
-function cycle()
-{
- 
+function cycle(){
+    
+
     // count number of memory writes
     let writes = 0;
 
@@ -96,5 +96,7 @@ function cycle()
 
     }
     updateDisplay(divs[sizeArr-1],"green",rndArr[sizeArr-1]);
-    console.log(rndArr)
+    // console.log(rndArr)
+    enable_buttons();
+
 }

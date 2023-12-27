@@ -1,13 +1,14 @@
 /*
 author:sam manoli
 
-description: cocktail sort, kinda like bubble sort but going forwards and backwards
+DESCRIPTION: cocktail sort, kinda like bubble sort but going forwards and backwards
 
 
 */
 
 function cocktail()
     {
+        
         let swapped = true;
         let start = 0;
         let end = sizeArr;
@@ -79,6 +80,7 @@ function cocktail()
 
                     swapped = true;
                 }
+
                 updateDisplay(divs[i], "purple",rndArr[i]);
                 updateDisplay(divs[i], "green",rndArr[i]);
                 updateDisplay(divs[i+1], "green",rndArr[i+1]);
@@ -93,5 +95,7 @@ function cocktail()
             // smallest number to its rightful spot.
             start = start + 1;
         }
-        console.log(rndArr)
+        // console.log(rndArr)
+        enable_buttons();
+
     }

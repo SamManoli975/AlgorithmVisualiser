@@ -4,7 +4,11 @@ DESCRIPTION: javascript file to complete merge sort with the random algorithm an
 */
 
 function merge(){
+
+
     mergePrep(0, sizeArr - 1);
+    enable_buttons();
+
 }
 function mergeSort(l,m,r){
     var p=l,q=m+1;

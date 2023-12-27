@@ -5,7 +5,10 @@ DESCRIPTION: javascript file to complete quick sort with the random algorithm an
 
 function quick(){
 
+
     quickSort(0,sizeArr-1);
+    enable_buttons();
+
 
 }
 

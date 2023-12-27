@@ -5,7 +5,7 @@ description: shell sort visualiser
 */
 
 function shell(){ 
-    c_delay=0;
+    // c_delay=0;
      
    
     // Start with a big gap, then reduce the gap 
@@ -60,6 +60,8 @@ function shell(){
     }
     
     
-    console.log(rndArr);
+    // console.log(rndArr);
+    enable_buttons();
+
     return rndArr; 
 } 

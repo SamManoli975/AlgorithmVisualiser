@@ -5,7 +5,7 @@ DESCRIPTION: javascript file to complete selection sort with the random algorith
 // rndArr = [1,5,2,6,4,3]
 
 
-console.log('this file is fine');
+// console.log('this file is fine');
 
 //function to perform and update the selection sorting algorithm
 function selection(){
@@ -62,5 +62,7 @@ function selection(){
     // return rndArr;
     //more debugging
     // console.log("Selection sort completed: " + rndArr)
+    enable_buttons();
+
 };
 

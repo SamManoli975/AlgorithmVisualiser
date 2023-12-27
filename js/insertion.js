@@ -6,6 +6,7 @@ DESCRIPTION: javascript file to complete insertion sort with the random algorith
 function insertion(){
 
 
+
     for(let i=1;i<sizeArr;i++){
         updateDisplay(divs[i],"yellow",rndArr[i]);
 
@@ -37,4 +38,6 @@ function insertion(){
        
     }
     updateDisplay(divs[sizeArr-1],"green",rndArr[sizeArr-1]);
+    enable_buttons();
+
 }

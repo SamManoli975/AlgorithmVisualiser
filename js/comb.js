@@ -16,6 +16,7 @@ function getNextGap(gap){
 
 function comb(){
 
+
     
     let gap = sizeArr;
 
@@ -63,6 +64,8 @@ function comb(){
         updateDisplay(divs[i],"green",rndArr[i]);
 
     }
-    console.log(rndArr);
+    // console.log(rndArr);
+    enable_buttons();
+
 }
     
