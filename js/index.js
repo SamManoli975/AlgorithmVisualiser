@@ -73,8 +73,8 @@ function sortAlgs(){
                         break;
         case "Cycle":cycle();
                         break;
-        // case "Cocktail":cocktail();
-        //                 break;
+        case "Cocktail":cocktail();
+                        break;
     }
 }
 
